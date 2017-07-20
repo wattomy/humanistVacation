@@ -169,7 +169,9 @@ dt {
     max-width: 650px;
     margin: 0 auto;
     padding: 0 10px;
-    background: blue;
+    text-align: center;
+    vertical-align: middle;
+    //background: blue;
     margin: 6px auto;
 
     li {
@@ -221,6 +223,11 @@ dt {
         font-size: 11px;
       }
     }
+  }
+  
+  p{
+    font-style: italic;
+    margin-top: -1%;
   }
 }
 
