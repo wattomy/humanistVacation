@@ -2,49 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e7689536-08bb-4c7c-89a9-1b1bcce0994c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/welcome/1.jpg" afterPath="$PROJECT_DIR$/assets/images/welcome/1.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/welcome/10.jpg" afterPath="$PROJECT_DIR$/assets/images/welcome/10.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/welcome/11.jpg" afterPath="$PROJECT_DIR$/assets/images/welcome/11.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/welcome/12.jpg" afterPath="$PROJECT_DIR$/assets/images/welcome/12.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/welcome/13.jpg" afterPath="$PROJECT_DIR$/assets/images/welcome/13.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/welcome/14.jpg" afterPath="$PROJECT_DIR$/assets/images/welcome/14.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/welcome/15.jpg" afterPath="$PROJECT_DIR$/assets/images/welcome/15.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/welcome/16.jpg" afterPath="$PROJECT_DIR$/assets/images/welcome/16.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/welcome/17.jpg" afterPath="$PROJECT_DIR$/assets/images/welcome/17.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/welcome/18.jpg" afterPath="$PROJECT_DIR$/assets/images/welcome/18.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/welcome/19.jpg" afterPath="$PROJECT_DIR$/assets/images/welcome/19.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/welcome/2.jpg" afterPath="$PROJECT_DIR$/assets/images/welcome/2.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/welcome/20.jpg" afterPath="$PROJECT_DIR$/assets/images/welcome/20.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/welcome/3.jpg" afterPath="$PROJECT_DIR$/assets/images/welcome/3.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/welcome/4.jpg" afterPath="$PROJECT_DIR$/assets/images/welcome/4.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/welcome/5.jpg" afterPath="$PROJECT_DIR$/assets/images/welcome/5.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/welcome/6.jpg" afterPath="$PROJECT_DIR$/assets/images/welcome/6.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/welcome/7.jpg" afterPath="$PROJECT_DIR$/assets/images/welcome/7.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/welcome/8.jpg" afterPath="$PROJECT_DIR$/assets/images/welcome/8.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/welcome/9.jpg" afterPath="$PROJECT_DIR$/assets/images/welcome/9.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/welcome/1.jpg" afterPath="$PROJECT_DIR$/public/images/welcome/1.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/welcome/10.jpg" afterPath="$PROJECT_DIR$/public/images/welcome/10.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/welcome/11.jpg" afterPath="$PROJECT_DIR$/public/images/welcome/11.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/welcome/12.jpg" afterPath="$PROJECT_DIR$/public/images/welcome/12.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/welcome/13.jpg" afterPath="$PROJECT_DIR$/public/images/welcome/13.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/welcome/14.jpg" afterPath="$PROJECT_DIR$/public/images/welcome/14.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/welcome/15.jpg" afterPath="$PROJECT_DIR$/public/images/welcome/15.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/welcome/16.jpg" afterPath="$PROJECT_DIR$/public/images/welcome/16.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/welcome/17.jpg" afterPath="$PROJECT_DIR$/public/images/welcome/17.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/welcome/18.jpg" afterPath="$PROJECT_DIR$/public/images/welcome/18.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/welcome/19.jpg" afterPath="$PROJECT_DIR$/public/images/welcome/19.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/welcome/2.jpg" afterPath="$PROJECT_DIR$/public/images/welcome/2.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/welcome/20.jpg" afterPath="$PROJECT_DIR$/public/images/welcome/20.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/welcome/3.jpg" afterPath="$PROJECT_DIR$/public/images/welcome/3.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/welcome/4.jpg" afterPath="$PROJECT_DIR$/public/images/welcome/4.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/welcome/5.jpg" afterPath="$PROJECT_DIR$/public/images/welcome/5.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/welcome/6.jpg" afterPath="$PROJECT_DIR$/public/images/welcome/6.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/welcome/7.jpg" afterPath="$PROJECT_DIR$/public/images/welcome/7.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/welcome/8.jpg" afterPath="$PROJECT_DIR$/public/images/welcome/8.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/welcome/9.jpg" afterPath="$PROJECT_DIR$/public/images/welcome/9.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_layouts/default.html" afterPath="$PROJECT_DIR$/_layouts/default.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_sass/jekyll-theme-midnight.scss" afterPath="$PROJECT_DIR$/_sass/jekyll-theme-midnight.scss" />
     </list>
     <ignored path="humanistVacation.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -69,8 +28,8 @@
       <file leaf-file-name="default.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_layouts/default.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-795">
-              <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+            <state relative-caret-position="501">
+              <caret line="233" column="40" selection-start-line="233" selection-start-column="40" selection-end-line="233" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -281,12 +240,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1500450511195</updated>
-      <workItem from="1500450624517" duration="16678000" />
+      <workItem from="1500450624517" duration="19638000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16678000" />
+    <option name="totallyTimeSpent" value="19638000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
@@ -389,8 +348,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_layouts/default.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-795">
-          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+        <state relative-caret-position="501">
+          <caret line="233" column="40" selection-start-line="233" selection-start-column="40" selection-end-line="233" selection-end-column="40" />
           <folding />
         </state>
       </provider>
