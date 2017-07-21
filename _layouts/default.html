@@ -5,22 +5,24 @@
     <!--<meta http-equiv="X-UA-Compatible" content="chrome=1">-->
     <!--<title>{{ site.title | default: site.github.repository_name }} by {{ site.github.owner_name }}</title>-->
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/preview.css?v=' | append: site.github.build_revision | relative_url }}">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.nailthumb/1.1/jquery.nailthumb.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/shadowbox/3.0.3/base-full/shadowbox.css">
+    <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/shadowbox/3.0.3/base-full/shadowbox.css">-->
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 
 
     <script src="https://cdn.jsdelivr.net/jquery.nailthumb/1.1/jquery.nailthumb.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/shadowbox/3.0.3/shadowbox.js"></script>
-    <script src="https://cdn.jsdelivr.net/shadowbox/3.0.3/base-full/shadowbox.js"></script>
+    <!--<script src="https://cdn.jsdelivr.net/shadowbox/3.0.3/shadowbox.js"></script>-->
+    <!--<script src="https://cdn.jsdelivr.net/shadowbox/3.0.3/base-full/shadowbox.js"></script>-->
 
 
     <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.0/masonry.pkgd.min.js"></script>-->
     <script src="{{ '/assets/js/respond.js' | relative_url }}"></script>
-    <script src="{{ '/assets/js/freewall.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/preview.js' | relative_url }}"></script>
+    <!--<script src="{{ '/assets/js/freewall.js' | relative_url }}"></script>-->
     <!--[if lt IE 9]>
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -40,15 +42,39 @@
         display: inline-block;
       }
       .nailthumb-container{
-        margin:0 0 -5px;
+        margin:0 0 -0.5%;
+      }
+      .slides {
+        position: absolute;
+        top: 20%;
+        background: rgba(37, 37, 37, 0.6);
+      }
+      .slides img {
+        height: 30%;
+        width: 45%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+      }
+      #manualSlide{
+        display: none;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 25%;
+      }
+
+      #closeSlide{
+        font-weight: bolder;
+        margin-left: 1%;
       }
 
       .gallery {
         position: relative;
         /* custom width */
-        width: 700px;
+        /*width: 700px;*/
         /* custom height */
-        height: 394px;
+        /*height: 394px;*/
         overflow: hidden;
       }
 
@@ -112,96 +138,7 @@
           },
           titleAttr:'alt'
         });
-//        Shadowbox.init();
       });
-
-
-//      (function() {
-//        $(document).ready(function() {
-//          return $(".gallery").gallery();
-//        });
-//
-//        $.fn.gallery = function(options) {
-//          var galleries;
-//          galleries = Array();
-//          return this.each(function(key) {
-//            var animate, b, btn, buttons, buttons_width, current;
-//            current = key;
-//            galleries[current] = $.extend({
-//              speed: 5000,
-//              object: this,
-//              width: $(this).width(),
-//              height: $(this).height(),
-//              images: $("img", this).length,
-//              current_image: 0,
-//              interval: ""
-//            }, options);
-//            $.each($("img", this), function(key, value) {
-//              var image;
-//              image = new Image();
-//              image.src = $(this).attr("src");
-//              return image.onload = function() {
-//                var new_height, new_width, offset_left, offset_top;
-//                new_width = galleries[current].width;
-//                new_height = this.height / this.width * new_width;
-//                if (new_height < galleries[current].height) {
-//                  new_height = galleries[current].height;
-//                  new_width = this.width / this.height * new_height;
-//                }
-//                offset_top = ((new_height - galleries[current].height) / 2) * -1;
-//                offset_left = ((new_width - galleries[current].width) / 2) * -1;
-//                $("img:eq(" + key + ")", galleries[current].object).css("top", offset_top + "px");
-//                $("img:eq(" + key + ")", galleries[current].object).css("left", offset_left + "px");
-//                $("img:eq(" + key + ")", galleries[current].object).css("width", new_width + "px");
-//                return $("img:eq(" + key + ")", galleries[current].object).css("height", new_height + "px");
-//              };
-//            });
-//            b = 0;
-//            buttons = $("<div class='gallery-buttons'></div>");
-//            while (b < galleries[current].images) {
-//              btn = $("<div class='gallery-btn' data-image='" + b + "'></div>");
-//              if (b === 0) {
-//                btn.addClass("active");
-//              }
-//              buttons.append(btn);
-//              b++;
-//            }
-//            buttons_width = (b * 20) + ((b - 1) * 10);
-//            buttons.css("width", buttons_width + "px");
-//            $(this).append(buttons);
-//            $(".gallery-btn", galleries[current].object).on("click", function(e) {
-//              e.preventDefault();
-//              if (galleries[current].current_image !== $(this).data("image")) {
-//                clearInterval(galleries[current].interval);
-//                return animate($(this).data("image"));
-//              }
-//            });
-//            galleries[current].interval = setInterval(function() {
-//              return animate();
-//            }, galleries[current].speed);
-//            return animate = function(image) {
-//              if (image == null) {
-//                image = "";
-//              }
-//              $("img:eq(" + galleries[current].current_image + ")", galleries[current].object).removeClass("active");
-//              $(".gallery-buttons .gallery-btn:eq(" + galleries[current].current_image + ")", galleries[current].object).removeClass("active");
-//              galleries[current].current_image++;
-//              if (image === "") {
-//                if (galleries[current].current_image === galleries[current].images) {
-//                  galleries[current].current_image = 0;
-//                }
-//              } else {
-//                galleries[current].current_image = image;
-//              }
-//              $("img:eq(" + galleries[current].current_image + ")", galleries[current].object).addClass("active");
-//              return $(".gallery-buttons .gallery-btn:eq(" + galleries[current].current_image + ")", galleries[current].object).addClass("active");
-//            };
-//          });
-//        };
-//
-//      }).call(this);
-
-
     </script>
 
   </head>
@@ -219,7 +156,8 @@
           var enjoymsg = "Life is like a mirror, we get the best results when we smile at it. With a sea next to you, you cannot but smile.";
           var msgString = msg.split(" ");
           var count = 33;
-          for (var images=[],i=1;i<count;++i) images[i]=i; // make an array with numbers(images name)
+          for (var images=[],i=0;i<count-1;++i) images[i]=i+1; // make an array with numbers(images name) in order
+
           function shuffle(a) {
             var j, x, i;
             for (i = a.length; i; i--) {
@@ -235,12 +173,81 @@
             var name = "public/images/welcome/" + images[i-1] + '.jpg';
 //            var name = "public/images/welcome/" + i + '.jpg';
             if(msgString[i-1] !== undefined) {
-              $('#thumbnails').append('<a class="imgs nailthumb-container" title="' + msgString[i - 1] + '" href=' + name + '></a>');
+              $('#thumbnails').append('<a class="imgs nailthumb-container gal_img" id="' + images[i-1] + '" title="' + msgString[i - 1] + '" href=' + name + '></a>');
             }else {
               $('#thumbnails').append('<a class="imgs nailthumb-container" title="' + enjoymsg + '" href=' + name + '></a>');
             }
           }
         </script>
+
+
       </div>
+      <div class="slides">
+        <span id="closeSlide">X</span>
+      </div>
+
+
+
+
+
+      <div id="manualSlide">
+        <img src="" id="slideshow_image" >
+        <input type="image" id="prev_image" src="public/previous.png">
+        <input type="image" id="next_image" src="public/next.png">
+        <input type="image" id="close_image" src="public/close.png">
+        <input type="hidden" id="img_no" value="1">
+      </div>
+
+
+
+      <script>
+        //slideshow related scripts
+        $(document).ready(function(){
+          var next = 0;
+          //changing the images on the slideshow every 5sec
+          var looping = window.setInterval(function(){
+            $('.slides').children('img').remove();
+            var name = "public/images/welcome/" + images[next] + '.jpg';
+            $('.slides').append('<img id="' + images[next] + '" src="' + name + '">');
+            next++; //increment data array id
+            if (next==32) next=0; //repeat from start
+          },5000);
+
+          //closing/hiding slideshow
+          $('#closeSlide').click(function(){
+            clearInterval(looping);
+            $('.slides').hide();
+          });
+
+//          window.setInterval(function(){
+//            var totalWidth = window.innerWidth;
+//            var totalHeight = window.innerHeight;
+//            var w = $('#slideshow_image').width();
+//            var h = $('#slideshow_image').height;
+//
+//            var prevW = totalWidth/2 - w/2 + 10;
+//            var nextW = totalWidth/2 + w/2 - 10;
+//
+//            console.log(totalWidth);
+//            console.log(w);
+//            console.log($('#slideshow_image').clientWidth);
+//            console.log($('#slideshow_image').naturalWidth);
+//            console.log(prevW);
+//          }, 1000);
+
+        });
+
+        //opening manually images
+        $('a.imgs').click(function(e){
+          e.preventDefault();
+          $('#manualSlide').show();
+
+          //setting image in the center and hel buttons
+          big_image(this.href, this.id);
+          setTimeout(setButtons, 500);
+//          setButtons();
+        });
+
+      </script>
   </body>
 </html>
