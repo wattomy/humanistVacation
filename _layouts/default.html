@@ -6,6 +6,8 @@
     <!--<title>{{ site.title | default: site.github.repository_name }} by {{ site.github.owner_name }}</title>-->
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <link rel="stylesheet" href="{{ '/assets/css/preview.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/folders.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/aesthetics.css?v=' | append: site.github.build_revision | relative_url }}">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.nailthumb/1.1/jquery.nailthumb.min.css">
     <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/shadowbox/3.0.3/base-full/shadowbox.css">-->
@@ -35,8 +37,8 @@
 
     <style type="text/css" media="screen">
       .imgs {
-        width: 150px;
-        height: 150px;
+        width: 125px;
+        height: 125px;
         background-position: center center;
         background-repeat: no-repeat;
         display: inline-block;
@@ -71,10 +73,6 @@
 
       .gallery {
         position: relative;
-        /* custom width */
-        /*width: 700px;*/
-        /* custom height */
-        /*height: 394px;*/
         overflow: hidden;
       }
 
@@ -155,7 +153,7 @@
           var msg = "Every summer is full of adventures. It is similar to every Human-IST project except for the beautiful beaches and refreshing crystal-clear water.";
           var enjoymsg = "Life is like a mirror, we get the best results when we smile at it. With a sea next to you, you cannot but smile.";
           var msgString = msg.split(" ");
-          var count = 33;
+          var count = 56;
           for (var images=[],i=0;i<count-1;++i) images[i]=i+1; // make an array with numbers(images name) in order
 
           function shuffle(a) {
@@ -197,6 +195,42 @@
         <input type="image" id="close_image" src="public/close.png">
         <input type="hidden" id="img_no" value="1">
       </div>
+
+
+      <!--Folders-->
+      <div id="wrap">
+        <div class="container">
+          <div class="folder">
+            <span class="folder-title" id="cro">Croatia</span>
+            <div class="folder-inside"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="folder">
+            <span class="folder-title" id="ro">Romania</span>
+            <div class="folder-inside"></div>
+          </div>
+
+        </div>
+        <div class="container">
+          <div class="folder">
+            <span class="folder-title" id="bih">Bosnia & Herzegovina</span>
+            <div class="folder-inside"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="folder">
+            <span class="folder-title" id="mne">Montenegro</span>
+            <div class="folder-inside"></div>
+          </div>
+        </div>
+      </div>
+
+      <div id="cro-thumbnails" class="gallery country-thumbnails">AAA</div>
+      <div id="ro-thumbnails" class="gallery country-thumbnails">BB</div>
+      <div id="bih-thumbnails" class="gallery country-thumbnails">CCC</div>
+      <div id="mne-thumbnails" class="gallery country-thumbnails">DDD</div>
+
 
 
 
@@ -242,10 +276,18 @@
           e.preventDefault();
           $('#manualSlide').show();
 
-          //setting image in the center and hel buttons
+          //setting image in the center and help buttons
           big_image(this.href, this.id);
           setTimeout(setButtons, 500);
 //          setButtons();
+        });
+
+//        opening folder
+        $('.folder').click(function(e){
+          console.log($(this).children('span.folder-title')[0].id);
+          var country = $(this).children('span.folder-title')[0].id;
+          $('#' + country + '-thumbnails').toggle();
+//          console.log($(e.target).children('span.folder-title')[0].id);
         });
 
       </script>
