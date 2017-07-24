@@ -226,10 +226,10 @@
         </div>
       </div>
 
-      <div id="cro-thumbnails" class="gallery country-thumbnails">AAA</div>
-      <div id="ro-thumbnails" class="gallery country-thumbnails">BB</div>
-      <div id="bih-thumbnails" class="gallery country-thumbnails">CCC</div>
-      <div id="mne-thumbnails" class="gallery country-thumbnails">DDD</div>
+      <div id="cro-thumbnails" class="gallery country-thumbnails"></div>
+      <div id="ro-thumbnails" class="gallery country-thumbnails"></div>
+      <div id="bih-thumbnails" class="gallery country-thumbnails"></div>
+      <div id="mne-thumbnails" class="gallery country-thumbnails"></div>
 
 
 
@@ -284,10 +284,27 @@
 
 //        opening folder
         $('.folder').click(function(e){
-          console.log($(this).children('span.folder-title')[0].id);
           var country = $(this).children('span.folder-title')[0].id;
-          $('#' + country + '-thumbnails').toggle();
-//          console.log($(e.target).children('span.folder-title')[0].id);
+          country = country.toUpperCase();
+          var name = "public/images/welcome/" + country + "/";
+
+          if(country == "RO"){
+            var count = 38;
+          }else if(country == "CRO"){
+            var count = 77;
+          }else if (country == "BIH"){
+            var count = 10;
+          }else if (country == "MNE"){
+            var count = 14;
+          }
+          for (var i=1; i < count; i++){
+//            if(msgString[i-1] !== undefined) {
+//              $('#thumbnails').append('<a class="imgs nailthumb-container gal_img" title="' + msgString[i - 1] + '" href=' + name + '></a>');
+//            }else {
+              $('#' + country.toLowerCase() + '-thumbnails').append('<a class="imgs nailthumb-container" title="' + enjoymsg + '" href=' + name + i + ".jpg" + '></a>');
+//            }
+          }
+          $('#' + country.toLowerCase() + '-thumbnails').toggle();
         });
 
       </script>
