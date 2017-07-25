@@ -228,7 +228,7 @@
 
       <div id="cro-thumbnails" class="gallery country-thumbnails"></div>
       <div id="ro-thumbnails" class="gallery country-thumbnails"></div>
-      <div id="bih-thumbnails" class="gallery country-thumbnails"></div>
+      <div id="bih-thumbnails" class="country-thumbnails"></div>
       <div id="mne-thumbnails" class="gallery country-thumbnails"></div>
 
 
@@ -286,7 +286,7 @@
         $('.folder').click(function(e){
           var country = $(this).children('span.folder-title')[0].id;
           country = country.toUpperCase();
-          var name = "public/images/welcome/" + country + "/";
+          var name = "public/" + country + "/";
 
           if(country == "RO"){
             var count = 38;
@@ -305,6 +305,16 @@
 //            }
           }
           $('#' + country.toLowerCase() + '-thumbnails').toggle();
+          jQuery('.imgs').nailthumb({
+            imageCustomFinder: function(el){
+              var image = $('<img />').attr('src',el.attr('href').replace('/full/','/small/')).css('display','none');
+              image.attr('alt',el.attr('title'));
+              el.append(image);
+              return image;
+            },
+            titleAttr:'alt'
+          });
+
         });
 
       </script>

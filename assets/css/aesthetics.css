@@ -1,3 +1,5 @@
 .country-thumbnails{
     display: none;
+    overflow: visible;
+    top:20%;
 }
