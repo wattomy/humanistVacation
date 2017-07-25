@@ -60,6 +60,9 @@ function makeGallery() {
     });
 }
 
+$(document).ready(function(){
+    var enjoymsg = "Life is like a mirror, we get the best results when we smile at it. With a sea next to you, you cannot but smile.";
+
 //opening manually images
 $('a.imgs').click(function(e){
     e.preventDefault();
@@ -106,4 +109,5 @@ $('.folder').click(function(e){
     $(countryDiv).toggle();
     $(countryDiv).focus();
 
+});
 });
