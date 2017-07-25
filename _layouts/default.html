@@ -226,10 +226,10 @@
         </div>
       </div>
 
-      <div id="cro-thumbnails" class="gallery country-thumbnails"></div>
-      <div id="ro-thumbnails" class="gallery country-thumbnails"></div>
-      <div id="bih-thumbnails" class="country-thumbnails"></div>
-      <div id="mne-thumbnails" class="gallery country-thumbnails"></div>
+      <div id="cro-thumbnails" tabindex="1" class="country-thumbnails"></div>
+      <div id="ro-thumbnails" tabindex="2" class="country-thumbnails"></div>
+      <div id="bih-thumbnails" tabindex="3" class="country-thumbnails"></div>
+      <div id="mne-thumbnails" tabindex="4" class="country-thumbnails"></div>
 
 
 
@@ -253,22 +253,6 @@
             $('.slides').hide();
           });
 
-//          window.setInterval(function(){
-//            var totalWidth = window.innerWidth;
-//            var totalHeight = window.innerHeight;
-//            var w = $('#slideshow_image').width();
-//            var h = $('#slideshow_image').height;
-//
-//            var prevW = totalWidth/2 - w/2 + 10;
-//            var nextW = totalWidth/2 + w/2 - 10;
-//
-//            console.log(totalWidth);
-//            console.log(w);
-//            console.log($('#slideshow_image').clientWidth);
-//            console.log($('#slideshow_image').naturalWidth);
-//            console.log(prevW);
-//          }, 1000);
-
         });
 
         //opening manually images
@@ -284,36 +268,38 @@
 
 //        opening folder
         $('.folder').click(function(e){
-          var country = $(this).children('span.folder-title')[0].id;
-          country = country.toUpperCase();
-          var name = "public/" + country + "/";
+          $(this).toggleClass('opened'); //marking the folder
 
-          if(country == "RO"){
-            var count = 38;
-          }else if(country == "CRO"){
-            var count = 77;
-          }else if (country == "BIH"){
-            var count = 10;
-          }else if (country == "MNE"){
-            var count = 14;
+          var country = $(this).children('span.folder-title')[0].id;
+          var countryDiv = $('#' + country.toLowerCase() + '-thumbnails');
+          if(!($(countryDiv).children().length)) { //If element has no children ie imgs, then load
+            country = country.toUpperCase();
+            var name = "public/" + country + "/";
+
+            if (country == "RO") {
+              var count = 38;
+            } else if (country == "CRO") {
+              var count = 77;
+            } else if (country == "BIH") {
+              var count = 10;
+            } else if (country == "MNE") {
+              var count = 14;
+            }
+            for (var i = 1; i < count; i++) {
+              $(countryDiv).append('<a class="imgs nailthumb-container" title="' + enjoymsg + '" href=' + name + i + ".jpg" + '></a>');
+            }
+            $(countryDiv).children('.imgs').nailthumb({
+              imageCustomFinder: function (el) {
+                var image = $('<img />').attr('src', el.attr('href').replace('/full/', '/small/')).css('display', 'none');
+                image.attr('alt', el.attr('title'));
+                el.append(image);
+                return image;
+              },
+              titleAttr: 'alt'
+            });
           }
-          for (var i=1; i < count; i++){
-//            if(msgString[i-1] !== undefined) {
-//              $('#thumbnails').append('<a class="imgs nailthumb-container gal_img" title="' + msgString[i - 1] + '" href=' + name + '></a>');
-//            }else {
-              $('#' + country.toLowerCase() + '-thumbnails').append('<a class="imgs nailthumb-container" title="' + enjoymsg + '" href=' + name + i + ".jpg" + '></a>');
-//            }
-          }
-          $('#' + country.toLowerCase() + '-thumbnails').toggle();
-          jQuery('.imgs').nailthumb({
-            imageCustomFinder: function(el){
-              var image = $('<img />').attr('src',el.attr('href').replace('/full/','/small/')).css('display','none');
-              image.attr('alt',el.attr('title'));
-              el.append(image);
-              return image;
-            },
-            titleAttr:'alt'
-          });
+          $(countryDiv).toggle();
+          $(countryDiv).focus();
 
         });
 

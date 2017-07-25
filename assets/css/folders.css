@@ -105,47 +105,24 @@
     -webkit-transform: rotate(-7deg) translateY(-15%);
     transform: rotate(-7deg) translateY(-15%);
 }
-
-
-
-
-
-
-
-
-
-#wrap{
-    width: 100%;
-    /*height: 600px;*/
-    /*background-color: #000;*/
-    /*border: 1px solid white;*/
+.opened.folder::after{
+    width: 340px;
+    height: 210px;
+    position: absolute;
+    content: '';
+    background: deeppink;
+    top: 40px;
+    box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.3);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    /* the transform property rotates the front flap of the folder a bit t0 make it look 3D */
+    -webkit-transform: rotateX(-10deg);
+    transform: rotateX(-10deg);
+    -webkit-transition: all 400ms ease;
+    transition: all 400ms ease;
 }
-/*.fp1{*/
-    /*width: 25%;*/
-    /*height: 1px;*/
-    /*float: left;*/
-/*}*/
-/*#fp2{*/
-    /*width: 20%;*/
-    /*height: 600px;*/
-    /*float: left;*/
-    /*background-color: #666;*/
-/*}*/
-/*#fp3{*/
-    /*width: 20%;*/
-    /*height: 600px;*/
-    /*float: left;*/
-    /*background-color: #333;*/
-/*}*/
-/*#qual{*/
-    /*width: 20%;*/
-    /*height: 600px;*/
-    /*background-color: #666;*/
-    /*float: left;*/
-/*}*/
-/*#race{*/
-    /*width: 20%;*/
-    /*height: 600px;*/
-    /*background-color: #333;*/
-    /*float: left;*/
-/*}*/
+
+#wrap {
+    width: 100%;
+    margin-top: 2%;
+}

@@ -1,5 +1,9 @@
 .country-thumbnails{
     display: none;
     overflow: visible;
-    top:20%;
+    margin-top:10%;
+    margin-left: 2.5%;
+}
+*:focus{
+    outline:none;
 }
