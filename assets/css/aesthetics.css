@@ -5,5 +5,95 @@
     margin-left: 2.5%;
 }
 *:focus{
+    /*When we open a folder, we should jump to the images*/
     outline:none;
 }
+.imgs {
+    /*Images inside a thumbnails*/
+    width: 125px;
+    height: 125px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+.nailthumb-container{
+    margin:0 0 -0.5%;
+}
+.slides {
+    position: absolute;
+    top: 20%;
+    background: rgba(37, 37, 37, 0.6);
+}
+.slides img {
+    height: 30%;
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+#manualSlide{
+    /*When manually clicking on the specific image*/
+    display: none;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 25%;
+}
+
+#closeSlide{
+    /*Button for closing the slideshow*/
+    font-weight: bolder;
+    margin-left: 1%;
+}
+
+.gallery {
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery:nth-of-type(2) {
+    height: 700px;
+}
+
+.gallery img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    -webkit-transition: opacity .5s ease;
+    -moz-transition: opacity .5s ease;
+    transition: opacity .5s ease;
+}
+
+.gallery img.active, .gallery img:first-of-type {
+    opacity: 1;
+}
+
+.gallery .gallery-buttons {
+    position: absolute;
+    height: 20px;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.gallery .gallery-buttons .gallery-btn {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+.gallery .gallery-buttons .gallery-btn + .gallery-btn { margin-left: 10px; }
+
+.gallery .gallery-buttons .gallery-btn:hover,
+.gallery .gallery-buttons .gallery-btn.active { background-color: #3498db; }
+
+.gallery .gallery-buttons .gallery-btn.active { cursor: default; }

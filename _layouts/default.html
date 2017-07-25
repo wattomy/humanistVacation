@@ -2,142 +2,21 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <!--<meta http-equiv="X-UA-Compatible" content="chrome=1">-->
-    <!--<title>{{ site.title | default: site.github.repository_name }} by {{ site.github.owner_name }}</title>-->
+    <title>Human-IST is on a vacation!</title>
+    <!--Styles-->
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <link rel="stylesheet" href="{{ '/assets/css/preview.css?v=' | append: site.github.build_revision | relative_url }}">
     <link rel="stylesheet" href="{{ '/assets/css/folders.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.nailthumb/1.1/jquery.nailthumb.min.css">
     <link rel="stylesheet" href="{{ '/assets/css/aesthetics.css?v=' | append: site.github.build_revision | relative_url }}">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.nailthumb/1.1/jquery.nailthumb.min.css">
-    <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/shadowbox/3.0.3/base-full/shadowbox.css">-->
-
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-
-
-    <script src="https://cdn.jsdelivr.net/jquery.nailthumb/1.1/jquery.nailthumb.min.js"></script>
-    <!--<script src="https://cdn.jsdelivr.net/shadowbox/3.0.3/shadowbox.js"></script>-->
-    <!--<script src="https://cdn.jsdelivr.net/shadowbox/3.0.3/base-full/shadowbox.js"></script>-->
-
-
-    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.0/masonry.pkgd.min.js"></script>-->
-    <script src="{{ '/assets/js/respond.js' | relative_url }}"></script>
-    <script src="{{ '/assets/js/preview.js' | relative_url }}"></script>
-    <!--<script src="{{ '/assets/js/freewall.js' | relative_url }}"></script>-->
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <!--[if lt IE 8]>
-    <link rel="stylesheet" href="{{ '/assets/css/ie.css' | relative_url }}">
-    <![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-
-    <!--Styles-->
-
-    <style type="text/css" media="screen">
-      .imgs {
-        width: 125px;
-        height: 125px;
-        background-position: center center;
-        background-repeat: no-repeat;
-        display: inline-block;
-      }
-      .nailthumb-container{
-        margin:0 0 -0.5%;
-      }
-      .slides {
-        position: absolute;
-        top: 20%;
-        background: rgba(37, 37, 37, 0.6);
-      }
-      .slides img {
-        height: 30%;
-        width: 45%;
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
-      }
-      #manualSlide{
-        display: none;
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        top: 25%;
-      }
-
-      #closeSlide{
-        font-weight: bolder;
-        margin-left: 1%;
-      }
-
-      .gallery {
-        position: relative;
-        overflow: hidden;
-      }
-
-      .gallery:nth-of-type(2) {
-        height: 700px;
-      }
-
-      .gallery img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        opacity: 0;
-        -webkit-transition: opacity .5s ease;
-        -moz-transition: opacity .5s ease;
-        transition: opacity .5s ease;
-      }
-
-      .gallery img.active, .gallery img:first-of-type {
-        opacity: 1;
-      }
-
-      .gallery .gallery-buttons {
-        position: absolute;
-        height: 20px;
-        bottom: 20px;
-        left: 0;
-        right: 0;
-        margin: 0 auto;
-      }
-
-      .gallery .gallery-buttons .gallery-btn {
-        display: inline-block;
-        width: 20px;
-        height: 20px;
-        background-color: rgba(255, 255, 255, 0.5);
-        cursor: pointer;
-        border-radius: 50%;
-        border: 2px solid #fff;
-        -webkit-transition: all .3s ease;
-        -moz-transition: all .3s ease;
-        transition: all .3s ease;
-      }
-
-      .gallery .gallery-buttons .gallery-btn + .gallery-btn { margin-left: 10px; }
-
-      .gallery .gallery-buttons .gallery-btn:hover,
-      .gallery .gallery-buttons .gallery-btn.active { background-color: #3498db; }
-
-      .gallery .gallery-buttons .gallery-btn.active { cursor: default; }
-    </style>
-
-
-    <script type="text/javascript">
-      jQuery(document).ready(function() {
-        jQuery('.imgs').nailthumb({
-          imageCustomFinder: function(el){
-            var image = $('<img />').attr('src',el.attr('href').replace('/full/','/small/')).css('display','none');
-            image.attr('alt',el.attr('title'));
-            el.append(image);
-            return image;
-          },
-          titleAttr:'alt'
-        });
-      });
-    </script>
+    <!--Scripts-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.nailthumb/1.1/jquery.nailthumb.min.js"></script>
+    <script type="text/javascript" src="{{ '/assets/js/respond.js' | relative_url }}"></script>
+    <script type="text/javascript" src="{{ '/assets/js/preview.js' | relative_url }}"></script>
+    <script type="text/javascript" src="{{ '/assets/js/thumbnails.js' | relative_url }}"></script>
 
   </head>
   <body>
@@ -148,46 +27,41 @@
         </nav>
       </div>
 
+      <!--Initial thumbnails-->
       <div id="thumbnails" class="gallery">
         <script>
-          var msg = "Every summer is full of adventures. It is similar to every Human-IST project except for the beautiful beaches and refreshing crystal-clear water.";
-          var enjoymsg = "Life is like a mirror, we get the best results when we smile at it. With a sea next to you, you cannot but smile.";
-          var msgString = msg.split(" ");
-          var count = 56;
-          for (var images=[],i=0;i<count-1;++i) images[i]=i+1; // make an array with numbers(images name) in order
-
-          function shuffle(a) {
-            var j, x, i;
-            for (i = a.length; i; i--) {
-              j = Math.floor(Math.random() * i);
-              x = a[i - 1];
-              a[i - 1] = a[j];
-              a[j] = x;
-            }
-          }
-          shuffle(images); //randomize the order of images
-
-          for (var i=1; i < count; i++){
-            var name = "public/images/welcome/" + images[i-1] + '.jpg';
-//            var name = "public/images/welcome/" + i + '.jpg';
-            if(msgString[i-1] !== undefined) {
-              $('#thumbnails').append('<a class="imgs nailthumb-container gal_img" id="' + images[i-1] + '" title="' + msgString[i - 1] + '" href=' + name + '></a>');
-            }else {
-              $('#thumbnails').append('<a class="imgs nailthumb-container" title="' + enjoymsg + '" href=' + name + '></a>');
-            }
-          }
+//          var msg = "Every summer is full of adventures. It is similar to every Human-IST project except for the beautiful beaches and refreshing crystal-clear water.";
+//          var enjoymsg = "Life is like a mirror, we get the best results when we smile at it. With a sea next to you, you cannot but smile.";
+//          var msgString = msg.split(" ");
+//          var count = 56;
+//          for (var images=[],i=0;i<count-1;++i) images[i]=i+1; // make an array with numbers(images name) in order
+//
+//          function shuffle(a) {
+//            var j, x, i;
+//            for (i = a.length; i; i--) {
+//              j = Math.floor(Math.random() * i);
+//              x = a[i - 1];
+//              a[i - 1] = a[j];
+//              a[j] = x;
+//            }
+//          }
+//          shuffle(images); //randomize the order of images
+//
+//          for (var i=1; i < count; i++){
+//            var name = "public/images/welcome/" + images[i-1] + '.jpg';
+//            if(msgString[i-1] !== undefined) {
+//              $('#thumbnails').append('<a class="imgs nailthumb-container gal_img" id="' + images[i-1] + '" title="' + msgString[i - 1] + '" href=' + name + '></a>');
+//            }else {
+//              $('#thumbnails').append('<a class="imgs nailthumb-container" title="' + enjoymsg + '" href=' + name + '></a>');
+//            }
+//          }
         </script>
-
-
       </div>
+      <!--Automatic slideshow-->
       <div class="slides">
         <span id="closeSlide">X</span>
       </div>
-
-
-
-
-
+      <!--Manual slideshow, if automatic is closed-->
       <div id="manualSlide">
         <img src="" id="slideshow_image" >
         <input type="image" id="prev_image" src="public/previous.png">
@@ -195,8 +69,6 @@
         <input type="image" id="close_image" src="public/close.png">
         <input type="hidden" id="img_no" value="1">
       </div>
-
-
       <!--Folders-->
       <div id="wrap">
         <div class="container">
@@ -225,84 +97,10 @@
           </div>
         </div>
       </div>
-
+      <!--Space for pics inside a folder-->
       <div id="cro-thumbnails" tabindex="1" class="country-thumbnails"></div>
       <div id="ro-thumbnails" tabindex="2" class="country-thumbnails"></div>
       <div id="bih-thumbnails" tabindex="3" class="country-thumbnails"></div>
       <div id="mne-thumbnails" tabindex="4" class="country-thumbnails"></div>
-
-
-
-
-      <script>
-        //slideshow related scripts
-        $(document).ready(function(){
-          var next = 0;
-          //changing the images on the slideshow every 5sec
-          var looping = window.setInterval(function(){
-            $('.slides').children('img').remove();
-            var name = "public/images/welcome/" + images[next] + '.jpg';
-            $('.slides').append('<img id="' + images[next] + '" src="' + name + '">');
-            next++; //increment data array id
-            if (next==32) next=0; //repeat from start
-          },5000);
-
-          //closing/hiding slideshow
-          $('#closeSlide').click(function(){
-            clearInterval(looping);
-            $('.slides').hide();
-          });
-
-        });
-
-        //opening manually images
-        $('a.imgs').click(function(e){
-          e.preventDefault();
-          $('#manualSlide').show();
-
-          //setting image in the center and help buttons
-          big_image(this.href, this.id);
-          setTimeout(setButtons, 500);
-//          setButtons();
-        });
-
-//        opening folder
-        $('.folder').click(function(e){
-          $(this).toggleClass('opened'); //marking the folder
-
-          var country = $(this).children('span.folder-title')[0].id;
-          var countryDiv = $('#' + country.toLowerCase() + '-thumbnails');
-          if(!($(countryDiv).children().length)) { //If element has no children ie imgs, then load
-            country = country.toUpperCase();
-            var name = "public/" + country + "/";
-
-            if (country == "RO") {
-              var count = 38;
-            } else if (country == "CRO") {
-              var count = 77;
-            } else if (country == "BIH") {
-              var count = 10;
-            } else if (country == "MNE") {
-              var count = 14;
-            }
-            for (var i = 1; i < count; i++) {
-              $(countryDiv).append('<a class="imgs nailthumb-container" title="' + enjoymsg + '" href=' + name + i + ".jpg" + '></a>');
-            }
-            $(countryDiv).children('.imgs').nailthumb({
-              imageCustomFinder: function (el) {
-                var image = $('<img />').attr('src', el.attr('href').replace('/full/', '/small/')).css('display', 'none');
-                image.attr('alt', el.attr('title'));
-                el.append(image);
-                return image;
-              },
-              titleAttr: 'alt'
-            });
-          }
-          $(countryDiv).toggle();
-          $(countryDiv).focus();
-
-        });
-
-      </script>
   </body>
 </html>
