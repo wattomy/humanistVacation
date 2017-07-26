@@ -34,7 +34,7 @@ function makeGallery() {
 
 //actually adding the images as thumbnails
     for (var i = 1; i < count; i++) {
-        var name = "public/images/welcome/" + images[i - 1] + '.jpg';
+        var name = "public/images/welcomeThumbnails/" + images[i - 1] + '.jpg';
         if (msgString[i - 1] !== undefined) {
             $('#thumbnails').append('<a class="imgs nailthumb-container" id="' + images[i - 1] + '" title="' + msgString[i - 1] + '" href=' + name + '></a>');
         } else {
@@ -69,9 +69,12 @@ $(document).ready(function() {
     $('a.imgs').click(function (e) {
         e.preventDefault();
         $('#manualSlide').show();
+        //switching to folder with HQ images
+        var url = this.href;
+        url = url.replace('Thumbnails', '');
 
         //setting image in the center and help buttons
-        big_image(this.href, this.id);
+        big_image(url, this.id);
         $('.help-buttons').show();
         $('.help-buttons').focus();
     });
