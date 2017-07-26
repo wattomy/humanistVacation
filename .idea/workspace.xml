@@ -2,12 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e7689536-08bb-4c7c-89a9-1b1bcce0994c" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/animated_favicon1.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/animated_favicon1.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/favicon.ico" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/favicon.ico" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/animated_favicon1.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/favicon.ico" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_layouts/default.html" afterPath="$PROJECT_DIR$/_layouts/default.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/aesthetics.css" afterPath="$PROJECT_DIR$/assets/css/aesthetics.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/preview.css" afterPath="$PROJECT_DIR$/assets/css/preview.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/preview.js" afterPath="$PROJECT_DIR$/assets/js/preview.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/thumbnails.js" afterPath="$PROJECT_DIR$/assets/js/thumbnails.js" />
     </list>
     <ignored path="humanistVacation.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,8 +34,8 @@
       <file leaf-file-name="default.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_layouts/default.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="355">
-              <caret line="41" column="43" selection-start-line="41" selection-start-column="43" selection-end-line="41" selection-end-column="43" />
+            <state relative-caret-position="125">
+              <caret line="5" column="68" selection-start-line="5" selection-start-column="68" selection-end-line="5" selection-end-column="68" />
               <folding>
                 <element signature="n#div#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#1;n#div#5;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -215,10 +217,6 @@
               <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -231,6 +229,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -268,7 +270,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Omnic\Documents\GitHub\humanistVacation" />
       <recent name="C:\Users\Omnic\Documents\GitHub\humanistVacation\public" />
+      <recent name="C:\Users\Omnic\Documents\GitHub\humanistVacation\assets" />
       <recent name="C:\Users\Omnic\Documents\GitHub\humanistVacation\assets\images\welcome" />
     </key>
   </component>
@@ -329,18 +333,18 @@
       <option name="presentableId" value="Default" />
       <updated>1500450511195</updated>
       <workItem from="1500450624517" duration="40618000" />
-      <workItem from="1500887521378" duration="40834000" />
+      <workItem from="1500887521378" duration="41364000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81452000" />
+    <option name="totallyTimeSpent" value="81982000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2586393" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2586393" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -538,8 +542,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_layouts/default.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="41" column="43" selection-start-line="41" selection-start-column="43" selection-end-line="41" selection-end-column="43" />
+        <state relative-caret-position="125">
+          <caret line="5" column="68" selection-start-line="5" selection-start-column="68" selection-end-line="5" selection-end-column="68" />
           <folding>
             <element signature="n#div#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#1;n#div#5;n#body#0;n#html#0;n#!!top" expanded="false" />
