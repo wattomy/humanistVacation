@@ -69,10 +69,8 @@ $(document).ready(function() {
     $('a.imgs').click(function (e) {
         e.preventDefault();
         //closing/hiding slideshow
-        $('#closeSlide').click(function(){
-            clearInterval(looping);
-            $('.slides').hide();
-        });
+        clearInterval(looping);
+        $('.slides').hide();
 
         $('#manualSlide').show();
         //switching to folder with HQ images
