@@ -1,3 +1,4 @@
+var looping = 77;
 //Making nice little thumbanils out of images that are initially available
 jQuery(document).ready(function() {
     makeGallery();
@@ -45,7 +46,7 @@ function makeGallery() {
     //Automatic slideshow
     var next = 0;
     //changing the images on the slideshow every 5sec
-    var looping = window.setInterval(function(){
+    looping = window.setInterval(function(){
         $('.slides').children('img').remove();
         var name = "public/images/welcome/" + images[next] + '.jpg';
         $('.slides').append('<img id="' + images[next] + '" src="' + name + '">');

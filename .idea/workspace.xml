@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e7689536-08bb-4c7c-89a9-1b1bcce0994c" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/thumbnails.js" afterPath="$PROJECT_DIR$/assets/js/thumbnails.js" />
     </list>
     <ignored path="humanistVacation.iws" />
@@ -42,8 +43,8 @@
       <file leaf-file-name="thumbnails.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/js/thumbnails.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="72" column="8" selection-start-line="71" selection-start-column="8" selection-end-line="72" selection-end-column="8" />
+            <state relative-caret-position="0">
+              <caret line="0" column="16" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
               <folding>
                 <element signature="n#!!block;n#shuffle#0;n#!!block;n#makeGallery#0" expanded="false" />
               </folding>
@@ -299,12 +300,12 @@
       <option name="presentableId" value="Default" />
       <updated>1500450511195</updated>
       <workItem from="1500450624517" duration="40618000" />
-      <workItem from="1500887521378" duration="46176000" />
+      <workItem from="1500887521378" duration="46538000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86794000" />
+    <option name="totallyTimeSpent" value="87156000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
@@ -510,8 +511,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/thumbnails.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="72" column="8" selection-start-line="71" selection-start-column="8" selection-end-line="72" selection-end-column="8" />
+        <state relative-caret-position="0">
+          <caret line="0" column="16" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
           <folding>
             <element signature="n#!!block;n#shuffle#0;n#!!block;n#makeGallery#0" expanded="false" />
           </folding>
