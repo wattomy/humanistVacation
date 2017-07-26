@@ -68,6 +68,12 @@ $(document).ready(function() {
     function manualSlide() {
     $('a.imgs').click(function (e) {
         e.preventDefault();
+        //closing/hiding slideshow
+        $('#closeSlide').click(function(){
+            clearInterval(looping);
+            $('.slides').hide();
+        });
+
         $('#manualSlide').show();
         //switching to folder with HQ images
         var url = this.href;
@@ -88,7 +94,7 @@ $('.folder').click(function(e){
     var countryDiv = $('#' + country.toLowerCase() + '-thumbnails');
     if(!($(countryDiv).children().length)) { //If element has no children ie imgs, then load
         country = country.toUpperCase();
-        var name = "public/" + country + "/";
+        var name = "public/" + country + 'Thumbnails' +  "/";
 
         if (country == "RO") {
             var count = 38;
