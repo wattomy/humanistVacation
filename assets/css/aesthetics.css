@@ -37,13 +37,14 @@
     position: absolute;
     height: 100%;
     width: 100%;
-    top: 25%;
+    top: 15%;
 }
 
 #closeSlide{
     /*Button for closing the slideshow*/
     font-weight: bolder;
     margin-left: 1%;
+    cursor: pointer;
 }
 
 .gallery {

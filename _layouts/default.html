@@ -28,46 +28,21 @@
       </div>
 
       <!--Initial thumbnails-->
-      <div id="thumbnails" class="gallery">
-        <script>
-//          var msg = "Every summer is full of adventures. It is similar to every Human-IST project except for the beautiful beaches and refreshing crystal-clear water.";
-//          var enjoymsg = "Life is like a mirror, we get the best results when we smile at it. With a sea next to you, you cannot but smile.";
-//          var msgString = msg.split(" ");
-//          var count = 56;
-//          for (var images=[],i=0;i<count-1;++i) images[i]=i+1; // make an array with numbers(images name) in order
-//
-//          function shuffle(a) {
-//            var j, x, i;
-//            for (i = a.length; i; i--) {
-//              j = Math.floor(Math.random() * i);
-//              x = a[i - 1];
-//              a[i - 1] = a[j];
-//              a[j] = x;
-//            }
-//          }
-//          shuffle(images); //randomize the order of images
-//
-//          for (var i=1; i < count; i++){
-//            var name = "public/images/welcome/" + images[i-1] + '.jpg';
-//            if(msgString[i-1] !== undefined) {
-//              $('#thumbnails').append('<a class="imgs nailthumb-container gal_img" id="' + images[i-1] + '" title="' + msgString[i - 1] + '" href=' + name + '></a>');
-//            }else {
-//              $('#thumbnails').append('<a class="imgs nailthumb-container" title="' + enjoymsg + '" href=' + name + '></a>');
-//            }
-//          }
-        </script>
-      </div>
+      <div id="thumbnails" class="gallery"></div>
       <!--Automatic slideshow-->
       <div class="slides">
         <span id="closeSlide">X</span>
       </div>
       <!--Manual slideshow, if automatic is closed-->
       <div id="manualSlide">
-        <img src="" id="slideshow_image" >
+        <img src="" id="slideshow_image">
+        <input type="hidden" id="img_no" value="1">
+      </div>
+      <!--Buttons to manoeuvre around the manual slideshow-->
+      <div class="help-buttons" tabindex="7">
         <input type="image" id="prev_image" src="public/previous.png">
         <input type="image" id="next_image" src="public/next.png">
         <input type="image" id="close_image" src="public/close.png">
-        <input type="hidden" id="img_no" value="1">
       </div>
       <!--Folders-->
       <div id="wrap">

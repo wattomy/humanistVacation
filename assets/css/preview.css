@@ -38,13 +38,15 @@
 }
 #prev_image
 {
-    top:80%;
-    left:10%;
+    top:0%;
+    left:25%;
+    margin: 0;
 }
 #next_image
 {
-    top:80%;
-    left:90%;
+    top:0%;
+    left:75%;
+    margin: 0;
 }
 #close_image
 {
@@ -56,6 +58,14 @@
 }
 #close_image
 {
-    top:15%;
-    left:93%;
+    top:10%;
+    left:50%;
+}
+.help-buttons{
+    position: absolute;
+    top: 10.5%;
+    width: 100%;
+    background-color: rgba(240,248,255,0.5);
+    height:7%;
+    display: none;
 }

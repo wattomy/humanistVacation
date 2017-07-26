@@ -31,6 +31,7 @@ function close()
         document.getElementById("close_image").style.display="none";
     });
     $('#manualSlide').hide();
+    $('.help-buttons').hide();
 }
 
 function visibility()
@@ -97,25 +98,4 @@ function next()
     });
 
     $('#slideshow_image').fadeIn(1000);
-}
-
-//This function sets the previous, next and close buttons on the right position regarding the image
-function setButtons(){
-    var totalWidth = window.innerWidth;
-    var totalHeight = window.innerHeight;
-    var w = $('#slideshow_image').width();
-    var h = $('#slideshow_image').height;
-
-    var prevW = totalWidth/2 - 0.6*w;
-    var nextW = totalWidth/2 + 0.44*w;
-    var prevH = totalHeight/2 - h;
-    var nextH = totalHeight/2 + h;
-
-    console.log(totalWidth/2 +  '- ' + w/2);
-    console.log(prevW);
-
-    $('#prev_image').css('position', 'relative').css('top', 0).css('left',0).css('margin-left', prevW + "px");
-    $('#next_image').css('left',0).css('margin-left', nextW + "px");
-    $('#prev_image').css('margin-top', prevH + "px");
-    $('#next_image').css('margin-top', nextH + "px");
 }

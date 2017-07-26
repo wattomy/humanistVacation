@@ -60,19 +60,22 @@ function makeGallery() {
     });
 }
 
-$(document).ready(function(){
+$(document).ready(function() {
     var enjoymsg = "Life is like a mirror, we get the best results when we smile at it. With a sea next to you, you cannot but smile.";
 
+    manualSlide();
 //opening manually images
-$('a.imgs').click(function(e){
-    e.preventDefault();
-    $('#manualSlide').show();
+    function manualSlide() {
+    $('a.imgs').click(function (e) {
+        e.preventDefault();
+        $('#manualSlide').show();
 
-    //setting image in the center and help buttons
-    big_image(this.href, this.id);
-    setTimeout(setButtons, 500);
-//          setButtons();
-});
+        //setting image in the center and help buttons
+        big_image(this.href, this.id);
+        $('.help-buttons').show();
+        $('.help-buttons').focus();
+    });
+}
 
 //        opening folder
 $('.folder').click(function(e){
@@ -108,6 +111,7 @@ $('.folder').click(function(e){
     }
     $(countryDiv).toggle();
     $(countryDiv).focus();
+    manualSlide();
 
 });
 });
